@@ -1,0 +1,62 @@
+/* reset css */
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 移动端开发兼容浏览器 */
+  -webkit-box-sizing: border-box;
+  /* 触摸时高亮的颜色为完全透明 */
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  font-size: 14px;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+input[type="search"],
+input[type='text']{
+  border: none;
+  outline: none;
+  /* 去除移动端输入框的立体效果 */
+  -webkit-appearance: none;
+}
+/* common css */
+.f_left{
+  float: left;
+}
+.f_right{
+  float: right;
+}
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  clear: both;
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+}
+.ml10{
+  margin-left: 10px;
+}
+.mr10{
+  margin-right: 10px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+/* 精灵图公共样式 */
+[class^="icon_"],[class*=" icon_"]{
+  background: url('../images/sprites.png') no-repeat 0 0 / 200px 200px;
+}
